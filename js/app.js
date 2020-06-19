@@ -2,7 +2,6 @@
 
 let start = document.querySelector('[data-start]');
 let destination = document.querySelector('[data-destination]');
-let sendRoute = document.querySelector('[data-route-submit]');
 let defaultPosition = {
     lat: 49.583120,
     lng: 34.582619
@@ -43,7 +42,6 @@ function initMap() {
         }
         calcRoute();
     }
-    const routeForm = document.querySelector('.ba-map');
-    routeForm.addEventListener('submit', newRoute);
-
+    const sendRoute = document.querySelector('.ba-map');
+    sendRoute.addEventListener('submit', newRoute);
 }
